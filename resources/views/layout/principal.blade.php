@@ -10,35 +10,21 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+
+        <style>
+            .meio {
+                text-align: center;
+            }
+        </style>
     </head>
     <body>
         <div class="container">
-            <center><h1>Listagem de produtos</h1></center>
-            <table class="table table-bordered table-stripped">
-                <thead class="thead-dark">
-                    <th>Nome</th>
-                    <th>Valor</th>
-                    <th>Descrição</th>
-                    <th>Quantidade</th>
-                    <th></th>
-                </thead>
-                <tbody>
-                    <?php foreach ($produtos as $p): ?>
-                        <tr>
-                        <td><?= $p->nome ?></td>
-                        <td><?= $p->valor ?></td>
-                        <td><?= $p->descricao ?></td>
-                        <td><?= $p->quantidade ?></td>
-                        <td><a href="/produtos/amostra">
-                            <span class="glyphicon glyphicon-search"></span>
-                        </a></td>
-                        </tr>
-                    <?php endforeach ?>
-                </tbody>
-            </table>
+            @yield('conteudo')
         </div>
 
         <!-- Optional JavaScript -->
