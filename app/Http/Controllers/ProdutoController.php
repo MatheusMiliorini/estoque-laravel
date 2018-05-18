@@ -2,6 +2,7 @@
     namespace estoque\Http\Controllers;
     use Illuminate\Http\Request;
     use Illuminate\Support\Facades\DB;
+    use Illuminate\Http\RedirectResponse;
 
     class ProdutoController extends Controller {
 
@@ -27,9 +28,9 @@
                 $data['descricao'],
                 $data['quantidade']]);
             
-                if ($add) {
-                    //COLOCAR ALGUMA COISA PRA MOSTRAR SE ADICIONOU OU NÃO!
-                }
+            if ($add) {
+                return redirect('/produtos')->with('adicionou',true);
+            }
         }
     }
 ?>

@@ -2,6 +2,12 @@
 
 @section('conteudo')   
 <h1 class="meio">Listagem de produtos</h1>
+
+@if (session('adicionou') == true)
+    <div class="alert alert-success">
+        <h4 class="meio">Adicionado com sucesso!</h4>
+    </div>
+@endif
 <table class="table table-bordered table-stripped">
     <thead class="thead-dark">
         <th>Nome</th>
