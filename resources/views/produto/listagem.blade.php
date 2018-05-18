@@ -20,7 +20,7 @@
         @foreach ($produtos as $p)
             <tr>
                 <td>{{$p->nome}}</td>
-                <td>{{$p->valor}}</td>
+                <td>R$ {{$p->valor}}</td>
                 <td>{{$p->descricao}}</td>
                 <td>@if ($p->quantidade == 0) Fora de estoque @else {{$p->quantidade}} @endif</td>
                 <td class="meio">
