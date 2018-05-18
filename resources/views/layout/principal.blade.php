@@ -20,10 +20,25 @@
             .meio {
                 text-align: center;
             }
+            .totalwidth {
+                width: 100%;
+            }
         </style>
     </head>
     <body>
         <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="/produtos/novo" class="nav-link">Cadastro de produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/produtos" class="nav-link">Listagem de produtos</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
             @yield('conteudo')
         </div>
 
