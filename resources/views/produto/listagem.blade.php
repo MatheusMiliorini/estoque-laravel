@@ -5,7 +5,7 @@
 
 @if (session('adicionou') == true)
     <div class="alert alert-success">
-        <h4 class="meio">Adicionado com sucesso!</h4>
+        <h4 class="meio">Adicionado produto {{session('produto')}} com sucesso!</h4>
     </div>
 @endif
 <table class="table table-bordered table-stripped">

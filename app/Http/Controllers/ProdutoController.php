@@ -29,7 +29,7 @@
                 $data['quantidade']]);
             
             if ($add) {
-                return redirect('/produtos')->with('adicionou',true);
+                return redirect('/produtos')->with('adicionou',true)->with('produto',$data['nome']);
             }
         }
     }
